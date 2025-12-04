@@ -1,0 +1,9 @@
+table = ""
+for i in range(2,21):
+    table = f"Table of {i}:\n\n"
+    for j in range(1,11):
+            table += f"{i} x {j} = {i*j}\n"
+    with open(f"./Table/{i}.txt","w") as f:
+        f.write(table)
+    table = ""    
+
